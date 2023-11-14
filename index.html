@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <img
+          src="./images/logo.svg"
+          alt="logo"
+          data-src="./images/logo.svg"
+          class="lazyload blur-up"
+        />
+        <h1 class="header__title">
+          We are launching <span class="header__title-span">soon!</span>
+        </h1>
+        <p class="header__paragraph">Subscribe and get notified</p>
+        <form class="form" id="form">
+          <label for="email"
+            ><input
+              class="form__input"
+              id="input"
+              type="email"
+              name="email"
+              placeholder="Your email address..."
+            />
+          </label>
+          <p class="form__error" id="error">
+            Please provide a valid email address
+          </p>
+          <button class="form__btn" type="submit">Notify Me</button>
+        </form>
+      </header>
+      <section
+        class="img lazyload blur-up"
+        data-src="./images/illustration-dashboard.png"
+      ></section>
+      <section class="socialMedia">
+        <div class="icons">
+          <ul class="icons__ul">
+            <li class="icons__list">
+              <a href="#">
+                <svg class="icon" width="19" height="19">
+                  <use href="/images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icons__list">
+              <a href="#">
+                <svg class="icon" width="19" height="19">
+                  <use href="/images/icons.svg#icon-x"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icons__list">
+              <a href="#">
+                <svg class="icon" width="19" height="19">
+                  <use href="/images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="Copyright">&copy; Copyright Ping. All rights reserved.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jonathan Jimenez</a>.
+      </p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
